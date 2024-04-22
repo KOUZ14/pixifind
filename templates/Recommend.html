@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Recommender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Recommend a Location</h2>
+
+<form id="recommendation-form">
+    <label for="name">Location Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+        <option value="">Select a category</option>
+        <option value="Historical Sites">Historical Sites</option>
+        <option value="Islands">Islands</option>
+        <option value="National Parks">National Parks</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById("recommendation-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        submitRecommendation();
+    });
+
+    function submitRecommendation() {
+        const formData = new FormData(document.getElementById("recommendation-form"));
+        const recommendation = {
+            name: formData.get("name"),
+            description: formData.get("description"),
+            category: formData.get("category")
+        };
+
+        fetch("http://localhost:8000/recommendations", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(recommendation)
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            document.getElementById("recommendation-form").reset();
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    }
+</script>
+
+</body>
+</html>

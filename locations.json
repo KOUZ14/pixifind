@@ -1,4 +1,4 @@
-locations = [
+[
     {
         "name": "Machu Picchu",
         "description": "Machu Picchu is an ancient Incan city set high in the Andes Mountains in Peru. It's renowned for its well-preserved ruins, picturesque terraces, and stunning panoramic views.",
@@ -101,12 +101,12 @@ locations = [
     },
     {
         "name": "The Redwoods, California",
-        "description": "Known as the largest trees in the world, these gentle giants are a must-see for any photographer travelling through California. These trees can be found along Northern California’s coast[^1^][5].",
+        "description": "Known as the largest trees in the world, these gentle giants are a must-see for any photographer travelling through California. These trees can be found along Northern California\u00e2\u20ac\u2122s coast[^1^][5].",
         "category": "Natural Wonders"
     },
     {
         "name": "Yosemite National Park, California",
-        "description": "Yosemite National Park offers some of the most incredible mountain scenery anywhere in California — complete with snow peaks, pine forest valleys and multicoloured skyscapes[^1^][5].",
+        "description": "Yosemite National Park offers some of the most incredible mountain scenery anywhere in California \u00e2\u20ac\u201d complete with snow peaks, pine forest valleys and multicoloured skyscapes[^1^][5].",
         "category": "National Parks"
     },
     {
@@ -131,7 +131,7 @@ locations = [
     },
     {
         "name": "Malibu, California",
-        "description": "Malibu is a city west of Los Angeles, California. It’s known for its celebrity homes and beaches, including wide and sandy Zuma Beach[^1^][5].",
+        "description": "Malibu is a city west of Los Angeles, California. It\u00e2\u20ac\u2122s known for its celebrity homes and beaches, including wide and sandy Zuma Beach[^1^][5].",
         "category": "Cities"
     },
     {
@@ -153,7 +153,10 @@ locations = [
         "name": "San Juan Capistrano, California",
         "description": "San Juan Capistrano has been the home to many generations of people, and it continues to represent the beauty of California[^2^][7].",
         "category": "Cities"
+    },
+    {
+        "name": "The LOT",
+        "description": "hzfndzgndzgfmnd",
+        "category": "Historical Sites"
     }
-
-
 ]
