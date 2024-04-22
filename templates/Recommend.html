@@ -3,92 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location Recommender</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        input, textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Location Search</title>
 </head>
 <body>
+    <h1>Location Search</h1>
+    <form id="searchForm">
+        <label for="query">Search Query:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="searchResults"></div>
 
-<h2>Recommend a Location</h2>
+    <h2>Recommend a Location</h2>
+    <form id="recommendForm">
+        <label for="name">Location Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+    
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="Rustic">Rustic</option>
+            <option value="Hills">Hills</option>
+            <option value="Forest">Forest</option>
+            <option value="Mountains">Mountains</option>
+            <option value="Park">Park</option>
+            <option value="Urban">Urban</option>
 
-<form id="recommendation-form">
-    <label for="name">Location Name:</label>
-    <input type="text" id="name" name="name" required>
+        </select>
+    
+        <button type="submit">Submit</button>
+    </form>
 
-    <label for="description">Description:</label>
-    <textarea id="description" name="description" required></textarea>
-
-    <label for="category">Category:</label>
-    <select id="category" name="category" required>
-        <option value="">Select a category</option>
-        <option value="Historical Sites">Historical Sites</option>
-        <option value="Islands">Islands</option>
-        <option value="National Parks">National Parks</option>
-    </select>
-
-    <button type="submit">Submit</button>
-</form>
-
-<script>
-    document.getElementById("recommendation-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        submitRecommendation();
-    });
-
-    function submitRecommendation() {
-        const formData = new FormData(document.getElementById("recommendation-form"));
-        const recommendation = {
-            name: formData.get("name"),
-            description: formData.get("description"),
-            category: formData.get("category")
-        };
-
-        fetch("http://localhost:8000/recommendations", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(recommendation)
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert(data.message);
-            document.getElementById("recommendation-form").reset();
-        })
-        .catch(error => {
-            console.error("Error:", error);
+    <script>
+        // Function to handle form submission for location search
+        document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            let query = document.getElementById("query").value; // Get the search query
+            searchLocations(query); // Call the searchLocations function
         });
-    }
-</script>
 
+        // Function to send AJAX request to Flask backend for location search
+        function searchLocations(query) {
+            fetch('/search', {
+                method: 'POST',
+                body: new URLSearchParams({query})
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display search results
+                let resultsDiv = document.getElementById("searchResults");
+                resultsDiv.innerHTML = `<h2>Search Results for "${query}":</h2>`;
+                data.results.forEach(result => {
+                    resultsDiv.innerHTML += `<div><strong>${result.name}</strong> (${result.category}): ${result.description} (Score: ${result.score})</div>`;
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        // Function to handle form submission for location recommendation
+        document.getElementById("recommendForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            let name = document.getElementById("name").value; // Get the name
+            let description = document.getElementById("description").value; // Get the description
+            let category = document.getElementById("category").value; // Get the category
+            submitRecommendation(name, description, category); // Call the submitRecommendation function
+        });
+
+        // Function to send AJAX request to Flask backend to submit location recommendation
+        function submitRecommendation(name, description, category) {
+            fetch('/recommend', {
+                method: 'POST',
+                body: new URLSearchParams({name, description, category})
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Display success message
+                alert(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
 </body>
 </html>

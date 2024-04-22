@@ -15,7 +15,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
@@ -67,7 +67,7 @@ def add_recommendation(recommendation: LocationRecommendation):
             locations = json.load(f)
         
         # Append the recommendation to the locations list
-        locations.append(recommendation.dict())
+        locations.append(recommendation.model_dump())
         
         # Write updated locations back to JSON file
         with open("locations.json", "w") as f:
