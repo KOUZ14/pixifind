@@ -28,13 +28,12 @@ def load_locations():
         locations = json.load(f)
     return locations
 
-# Load locations data
-locations = load_locations()
 
 # Location search endpoint with semantic search
 @app.get("/locations")
 async def search_locations(query: str):
     try:
+        locations = load_locations()
         # Encode the query into a dense vector representation
         query_embedding = model.encode(query, convert_to_tensor=True)
 
@@ -72,6 +71,8 @@ def add_recommendation(recommendation: LocationRecommendation):
         # Write updated locations back to JSON file
         with open("locations.json", "w") as f:
             json.dump(locations, f, indent=4)
+
+        locations_data = load_locations()
         
         return recommendation
     except Exception as e:

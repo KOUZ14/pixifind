@@ -6,6 +6,60 @@
     <title>Location Search</title>
 </head>
 <body>
+    <style>
+        /* Default styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media queries for responsiveness */
+        @media screen and (min-width: 768px) {
+            /* Larger screens - Adjust layout */
+            form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            /* Extra large screens - Adjust layout */
+            form {
+                max-width: 800px;
+            }
+        }
+
+    </style>
     <h1>Location Search</h1>
     <form id="searchForm">
         <label for="query">Search Query:</label>
@@ -56,9 +110,11 @@
                 // Display search results
                 let resultsDiv = document.getElementById("searchResults");
                 resultsDiv.innerHTML = `<h2>Search Results for "${query}":</h2>`;
-                data.results.forEach(result => {
-                    resultsDiv.innerHTML += `<div><strong>${result.name}</strong> (${result.category}): ${result.description} (Score: ${result.score})</div>`;
-                });
+                let filteredResults = data.results.filter(result => result.score >= 0.5);
+                for (let i = 0; i < Math.min(filteredResults.length, 5); i++) {
+                    let result = filteredResults[i];
+                    resultsDiv.innerHTML += `<div><strong>${result.name}</strong></div>`;
+                }
             })
             .catch(error => {
                 console.error('Error:', error);

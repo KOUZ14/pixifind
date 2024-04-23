@@ -153,5 +153,15 @@
         "name": "San Juan Capistrano, California",
         "description": "San Juan Capistrano has been the home to many generations of people, and it continues to represent the beauty of California[^2^][7].",
         "category": "Cities"
+    },
+    {
+        "name": "The LOT",
+        "description": "parking garage with urban vibes, modern and sleek architecture",
+        "category": "Urban"
+    },
+    {
+        "name": "Mines Rd",
+        "description": "Long stretch of back-road along Livermore mountain side",
+        "category": "Hills"
     }
 ]
