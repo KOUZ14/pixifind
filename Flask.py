@@ -13,7 +13,7 @@ def index():
 def search():
     query = request.form.get('query')
     # Make request to FastAPI backend
-    response = requests.get(f'http://localhost:8000/locations?query={query}')
+    response = requests.get(f'http://localhost:9000/locations?query={query}')
     return jsonify(response.json())
 
 # Route to handle form submission for location recommendations
@@ -23,7 +23,7 @@ def recommend():
     description = request.form.get('description')
     category = request.form.get('category')
         # Make request to FastAPI backend
-    response = requests.post('http://localhost:8000/recommendations', json={"name": name, "description": description, "category": category})
+    response = requests.post('http://localhost:9000/recommendations', json={"name": name, "description": description, "category": category})
     if response.status_code == 200:
         return 'Recommendation submitted successfully!'
     else:

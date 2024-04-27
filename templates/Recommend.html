@@ -76,18 +76,6 @@
         <label for="description">Description:</label>
         <textarea id="description" name="description" required></textarea>
     
-        <label for="category">Category:</label>
-        <select id="category" name="category" required>
-            <option value="">Select a category</option>
-            <option value="Rustic">Rustic</option>
-            <option value="Hills">Hills</option>
-            <option value="Forest">Forest</option>
-            <option value="Mountains">Mountains</option>
-            <option value="Park">Park</option>
-            <option value="Urban">Urban</option>
-
-        </select>
-    
         <button type="submit">Submit</button>
     </form>
 
@@ -108,13 +96,13 @@
             .then(response => response.json())
             .then(data => {
                 // Display search results
+                let results = data.results;
                 let resultsDiv = document.getElementById("searchResults");
-                resultsDiv.innerHTML = `<h2>Search Results for "${query}":</h2>`;
-                let filteredResults = data.results.filter(result => result.score >= 0.5);
-                for (let i = 0; i < Math.min(filteredResults.length, 5); i++) {
-                    let result = filteredResults[i];
-                    resultsDiv.innerHTML += `<div><strong>${result.name}</strong></div>`;
-                }
+                results.forEach(result => {
+                    // Construct HTML for each result and append it to the resultsDiv
+                    resultsDiv.innerHTML += `<div><strong>${result}</strong></div>`;
+                });
+                
             })
             .catch(error => {
                 console.error('Error:', error);
