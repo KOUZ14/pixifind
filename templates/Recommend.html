@@ -1,138 +1,609 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location Search</title>
-</head>
-<body>
-    <style>
-        /* Default styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1, h2 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        form {
-            margin-bottom: 20px;
-        }
-
-        input[type="text"],
-        textarea,
-        select {
-            width: 80%;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Media queries for responsiveness */
-        @media screen and (min-width: 768px) {
-            /* Larger screens - Adjust layout */
-            form {
-                max-width: 500px;
-                margin: 0 auto;
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            body {
+                margin: 0%;
+                overflow-x:hidden;
             }
-        }
-
-        @media screen and (min-width: 992px) {
-            /* Extra large screens - Adjust layout */
-            form {
-                max-width: 800px;
+            .page {
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            width: 100vw;
+            overflow:hidden;
             }
-        }
+            .component {
+            position: relative;
+            width: 100vw;
+            height: 45px;
+            display: flex;
+            margin: 1%;
+            overflow:hidden;
+            }
+            .component .logo {
+            position: relative;
+            width: 12%;
+            height: 80%;
+            top: 0;
+            left: 10px;
+            object-fit: cover;
+            }
 
-    </style>
-    <h1>Location Search</h1>
-    <form id="searchForm">
-        <label for="query">Search Query:</label>
-        <input type="text" id="query" name="query" required>
-        <button type="submit">Search</button>
-    </form>
-    <div id="searchResults"></div>
+            .component .container {
+                width:50%;
+                position: relative;
+                margin-left: 50%;
+                align-items: center;
+                display: flex;
+            }
+            .component .menu-1 {
+            position: relative;
+            left: 30%;
+            font-family: "Montserrat";
+            font-weight: 400;
+            color: #686868;
+            font-size: 15px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+            margin: 0px;
+            }
+            .component .menu-2 {
+            position: relative;
+            left: 40%;
+            font-family: "Montserrat";
+            font-weight: 400;
+            color: #686868;
+            font-size: 15px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+            }
+            .component .menu-3 {
+            position: relative;
+            left: 50%;
+            font-family: "Montserrat";
+            font-weight: 400;
+            color: #686868;
+            font-size: 15px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+            }
 
-    <h2>Recommend a Location</h2>
-    <form id="recommendForm">
-        <label for="name">Location Name:</label>
-        <input type="text" id="name" name="name" required>
-    
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" required></textarea>
-    
-        <button type="submit">Submit</button>
-    </form>
-
-    <script>
-        // Function to handle form submission for location search
-        document.getElementById("searchForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
-            let query = document.getElementById("query").value; // Get the search query
-            searchLocations(query); // Call the searchLocations function
-        });
-
-        // Function to send AJAX request to Flask backend for location search
-        function searchLocations(query) {
-            fetch('/search', {
-                method: 'POST',
-                body: new URLSearchParams({query})
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Display search results
-                let results = data.results;
-                let resultsDiv = document.getElementById("searchResults");
-                results.forEach(result => {
-                    // Construct HTML for each result and append it to the resultsDiv
-                    resultsDiv.innerHTML += `<div><strong>${result}</strong></div>`;
-                });
+            .component-2 {
+                position: relative;
+                width:100vw;
+                height:40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0%;
+                padding: 0%;
+                background-image: url("static/images/banner.jpg");
+                background-position: 0% 20%;
                 
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+            }
+
+            .text-container {
+                position: relative;
+                width:80%;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .slogan {
+                position: relative;
+                top: 0;
+                left: 0;
+                font-family: "Montserrat";
+                font-weight: 400;
+                color: #272727;
+                font-size: 50px;
+                text-align: center;
+                letter-spacing: 0;  
+                line-height: normal;
+                margin: 5%;
+            }
+
+            .component-3 {
+                height: 250px;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                padding-top: 2%;
+            }
+            .find-heading{
+                position: relative;
+                top: 0;
+                left: 0;
+                font-family: "Montserrat";
+                font-weight: 400;
+                color: #272727;
+                font-size: 40px;
+                text-align: center;
+                letter-spacing: 0;  
+                line-height: normal;
+                margin: 2%;
+            }
+            .find-search{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                align-items: center;
+                gap:10%;
+                
+            }
+            .find-input{
+                width: 30vw;
+                height: 3vw;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: "Montserrat";
+            }
+
+            .find-button {
+                width: 10%;
+                height: 30%;
+                border: none;
+                outline: none;
+                background: #2f2f2f;
+                color: #fff;
+                font-size: 12px;
+                border-radius: 40px;
+                text-align: center;
+                box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                font-family: "Montserrat";
+            }
+            .component-4 {
+                height: 400px;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 2%;
+            }
+
+            .location_form {
+                height: 100%;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:3%;
+            }
+
+            .top-level {
+                height: 20%;
+                width: 100vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                justify-content:space-around;
+                
+            }
+
+            .location_name {
+                width: 40%;
+                font-family: "Montserrat";
+                height: 60%;
+                
+            }
+
+            .location_link {
+                width: 40%;
+                font-family: "Montserrat";
+                height: 60%;
+            }
+
+            .location_image {
+                background-color: #87b3d4;
+                border-radius: 50px;
+                overflow: hidden;
+                color: #fff;
+                content: "\f382";
+                font-size: 12px;
+                position: relative;
+                transition: all 0.3s;
+                text-align:center;
+                width:40%;
+                height:15% ;
+                vertical-align: middle;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Montserrat";
+            }
+
+            [type="file"] {
+                height: 0;
+                overflow: hidden;
+                width: 0;
+            }
+
+            .location_description{
+                width: 80%;
+                height: 15%;
+                font-family: "Montserrat";
+                height: 60%;
+            }
+
+            .location_submit {
+                width: 30%;
+                height: 20%;
+                border: none;
+                outline: none;
+                background: #2f2f2f;
+                color: #fff;
+                font-size: 12px;
+                border-radius: 40px;
+                text-align: center;
+                box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+                overflow: hidden;
+                cursor: pointer;
+                font-family: "Montserrat";
+            }
+
+            a {
+                text-decoration: none;
+                color: #686868;
+            }
+            @media screen and (max-width: 600px) {
+                body{
+                    margin:0%;
+                }
+                .page {
+                display: flex;
+                height: 100vh;
+                margin: 0px;
+                padding: 0px;
+                left:0%;
+                width: 100vw;
+            }
+            .component {
+                position: relative;
+                width: 100vw;
+                height: 8%;
+                margin: 0%;
+                display: flex;
+            }
+            .component .container {
+                width:50%;
+                position: relative;
+                margin-left: 10%;
+                align-items: center;
+                display: flex;
+                top:3%;
+            }
+            .component .logo {
+            position: relative;
+            width: 30%;
+            height: 70%;
+            top: 15%;
+            left: 4%;
+            object-fit:contain;
+            }
+            .component .menu-1 {
+            position: relative;
+            left: 10%;
+            font-family: "Montserrat";
+            font-weight: 400;
+            color: #686868;
+            font-size: 12px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+            margin: 0px;
+            }
+            .component .menu-2 {
+            position: relative;
+            left: 20%;
+            font-family: "Montserrat";
+            font-weight: 400;
+            color: #686868;
+            font-size: 12px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+            }
+            .component .menu-3 {
+            position: relative;
+            left: 30%;
+            font-family: "Montserrat";
+            font-weight: 400;
+            color: #686868;
+            font-size: 12px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+            }
+
+            .component-2 {
+                position: relative;
+                width:100vw;
+                height:20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0%;
+                padding: 0%;
+                background-image: url("banner.jpg");
+                background-position: 0% 20%;
+                
+            }
+
+            .text-container {
+                position: relative;
+                width:80%;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .slogan {
+                position: relative;
+                top: 0;
+                left: 0;
+                font-family: "Montserrat";
+                font-weight: 400;
+                color: #272727;
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 0;  
+                line-height: normal;
+                margin: 5%;
+            }
+            .component-3 {
+                height: 13%;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                padding-top: 5%;
+            }
+            .find-heading{
+                position: relative;
+                top: 0;
+                left: 0;
+                font-family: "Montserrat";
+                font-weight: 400;
+                color: #272727;
+                font-size: 25px;
+                text-align: center;
+                letter-spacing: 0;  
+                line-height: normal;
+                margin: 2%;
+            }
+            .find-search{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                align-items: center;
+                gap:10%;
+                
+            }
+            .find-input{
+                width: 70%;
+                height: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: "Montserrat";
+            }
+
+            .find-button {
+                width: 30%;
+                height: 60%;
+                border: none;
+                outline: none;
+                background: #2f2f2f;
+                color: #fff;
+                font-size: 10px;
+                border-radius: 40px;
+                text-align: center;
+                box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                font-family: "Montserrat";
+            }
+
+            .component-4 {
+                height: 30%;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 5%;
+            }
+
+            .location_form {
+                height: 100%;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:3%;
+            }
+
+            .top-level {
+                height: 20%;
+                width: 100vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                justify-content:space-around;
+                
+            }
+
+            .location_name {
+                width: 40%;
+                font-family: "Montserrat";
+                height: 60%;
+                
+            }
+
+            .location_link {
+                width: 40%;
+                font-family: "Montserrat";
+                height: 60%;
+            }
+
+            .location_image {
+                background-color: #87b3d4;
+                border-radius: 50px;
+                overflow: hidden;
+                color: #fff;
+                content: "\f382";
+                font-size: 10px;
+                position: relative;
+                transition: all 0.3s;
+                text-align:center;
+                width:40%;
+                height:15% ;
+                vertical-align: middle;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Montserrat";
+            }
+
+            [type="file"] {
+                height: 0;
+                overflow: hidden;
+                width: 0;
+            }
+
+            .location_description{
+                width: 80%;
+                height: 15%;
+                font-family: "Montserrat";
+                height: 60%;
+            }
+
+            .location_submit {
+                width: 30%;
+                height: 20%;
+                border: none;
+                outline: none;
+                background: #2f2f2f;
+                color: #fff;
+                font-size: 10px;
+                border-radius: 40px;
+                text-align: center;
+                box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+                overflow: hidden;
+                cursor: pointer;
+                font-family: "Montserrat";
+            }
+
+            a {
+                text-decoration: none;
+                color: #686868;
+            }
         }
 
-        // Function to handle form submission for location recommendation
-        document.getElementById("recommendForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
-            let name = document.getElementById("name").value; // Get the name
-            let description = document.getElementById("description").value; // Get the description
-            let category = document.getElementById("category").value; // Get the category
-            submitRecommendation(name, description, category); // Call the submitRecommendation function
-        });
 
-        // Function to send AJAX request to Flask backend to submit location recommendation
-        function submitRecommendation(name, description, category) {
-            fetch('/recommend', {
-                method: 'POST',
-                body: new URLSearchParams({name, description, category})
-            })
-            .then(response => response.text())
-            .then(data => {
-                // Display success message
-                alert(data);
-            })
-            .catch(error => {
-                console.error('Error:', error);
+        </style>
+        <div class="page">
+            <div class="component">
+                <img class="logo" src="static\images\logo.png" />
+                <div class="container">
+                    <div class="menu-1"><a href="#find">Find</a></div>
+                    <div class="menu-2"><a href="#recommend">Recommend</a></div>
+                    <div class="menu-3">About</div>
+                </div>
+            </div>
+            <div class="component-2">
+                <div class="text-container"><p class="slogan">Discover the Perfect <br />Photo Locations</p></div>
+            </div>
+            <div class="component-3">
+                <div class="find-heading" id="find">Find</div>
+                <form class="find-search" id="searchForm">
+                    <input class="find-input" type="text" placeholder="Enter a phrase or keywords" id="query" name="query" required>
+                    <button class="find-button" type="submit">Search</button>
+                </form>
+                <div id="searchResults"></div>
+            </div>
+            <div class="component-4">
+                <div class="find-heading" id="recommend" >Recommend</div>
+                <form class="location_form" id="recommendForm">
+                    <div class="top-level">
+                        <input class="location_name" type="text" placeholder="Enter location name" id="name" name="name" required>
+                        <input class="location_link" type="text" placeholder="Enter location link" id="link" name="link" required>
+                    </div>
+                    <textarea class="location_description" id="description" placeholder="Describe the location in the your best possible way with keywords" name="description" required></textarea>
+                    <input type="file"  id="images" name="images" required>
+                    <label for="images" class="location_image">Upload Images</label>
+                    <button class="location_submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            // Function to handle form submission for location search
+            document.getElementById("searchForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission
+                let query = document.getElementById("query").value; // Get the search query
+                searchLocations(query); // Call the searchLocations function
             });
-        }
-    </script>
-</body>
+    
+            // Function to send AJAX request to Flask backend for location search
+            function searchLocations(query) {
+                fetch('/search', {
+                    method: 'POST',
+                    body: new URLSearchParams({query})
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Display search results
+                    let results = data.results;
+                    let resultsDiv = document.getElementById("searchResults");
+                    results.forEach(result => {
+                        // Construct HTML for each result and append it to the resultsDiv
+                        resultsDiv.innerHTML += `<div><strong>${result}</strong></div>`;
+                    });
+                    
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            }
+    
+            // Function to handle form submission for location recommendation
+            document.getElementById("recommendForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission
+                let name = document.getElementById("name").value; // Get the name
+                let description = document.getElementById("description").value; // Get the description
+                let category = document.getElementById("category").value; // Get the category
+                submitRecommendation(name, description, category); // Call the submitRecommendation function
+            });
+    
+            // Function to send AJAX request to Flask backend to submit location recommendation
+            function submitRecommendation(name, description, category) {
+                fetch('/recommend', {
+                    method: 'POST',
+                    body: new URLSearchParams({name, description, category})
+                })
+                .then(response => response.text())
+                .then(data => {
+                    // Display success message
+                    alert(data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            }
+        </script>
+    </body>
 </html>
+        
