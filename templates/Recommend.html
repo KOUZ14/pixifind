@@ -582,17 +582,28 @@
             // Function to handle form submission for location recommendation
             document.getElementById("recommendForm").addEventListener("submit", function(event) {
                 event.preventDefault(); // Prevent form submission
-                let name = document.getElementById("name").value; // Get the name
-                let description = document.getElementById("description").value; // Get the description
-                let category = document.getElementById("category").value; // Get the category
-                submitRecommendation(name, description, category); // Call the submitRecommendation function
+                // let name = document.getElementById("name").value; // Get the name
+                //let link = document.getElementById("link").value; // Get the description
+                //let description = document.getElementById("description").value; // Get the description
+                //let images = document.getElementById("images"); // Get the category
+                //submitRecommendation(name, link, description, images); // Call the submitRecommendation function
+                let formData = new FormData();
+                formData.append("name", document.getElementById("name").value);
+                formData.append("description", document.getElementById("description").value);
+                formData.append("link", document.getElementById("link").value);
+                let imageInput = document.getElementById("images");
+                for (let i = 0; i < imageInput.files.length; i++) {
+                    formData.append("images", imageInput.files[i]);
+                }
+
+                submitRecommendation(formData);
             });
     
             // Function to send AJAX request to Flask backend to submit location recommendation
-            function submitRecommendation(name, description, category) {
+            function submitRecommendation(formData) {
                 fetch('/recommend', {
                     method: 'POST',
-                    body: new URLSearchParams({name, description, category})
+                    body: formData
                 })
                 .then(response => response.text())
                 .then(data => {

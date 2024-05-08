@@ -2016,3 +2016,463 @@ chromadb.db.base.UniqueConstraintError: Collection locations already exists
 [32mINFO[0m:     [29-04-2024 22:31:13] ::1:53506 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
 [32mINFO[0m:     [29-04-2024 22:31:13] ::1:53507 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
 [32mINFO[0m:     [29-04-2024 22:31:13] ::1:53507 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:26] ::1:53835 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:26] ::1:53835 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:26] ::1:53836 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:35] ::1:53853 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:35] ::1:53853 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:35] ::1:53854 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:36] ::1:53854 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:50] ::1:53880 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:50] ::1:53880 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:50] ::1:53881 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:50] ::1:53881 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:53] ::1:53887 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:53] ::1:53887 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:53] ::1:53888 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:35:53] ::1:53888 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:36:38] ::1:53951 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:36:38] ::1:53951 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:36:38] ::1:53952 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:36:38] ::1:53952 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:36:42] ::1:53962 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:36:42] ::1:53962 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:36:42] ::1:53963 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:36:42] ::1:53963 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:37:03] ::1:53988 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:37:03] ::1:53988 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:37:03] ::1:53989 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:37:03] ::1:53989 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:37:42] ::1:54033 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:37:42] ::1:54033 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:37:42] ::1:54034 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:37:42] ::1:54034 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2024 22:49:37] Shutting down
+[32mINFO[0m:     [29-04-2024 22:49:37] Waiting for application shutdown.
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component System
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component SegmentAPI
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component Posthog
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component SqliteDB
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [29-04-2024 22:49:37] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [29-04-2024 22:49:37] Application shutdown complete.
+[32mINFO[0m:     [29-04-2024 22:49:37] Finished server process [[36m21576[0m]
+[33mWARNING[0m:  [30-04-2024 18:58:08] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [30-04-2024 18:58:09] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [30-04-2024 18:58:09] Starting component System
+[36mDEBUG[0m:    [30-04-2024 18:58:09] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [30-04-2024 18:58:09] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [30-04-2024 18:58:09] Starting component SqliteDB
+[36mDEBUG[0m:    [30-04-2024 18:58:09] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [30-04-2024 18:58:09] Starting component Posthog
+[36mDEBUG[0m:    [30-04-2024 18:58:09] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [30-04-2024 18:58:09] Starting component SegmentAPI
+[32mINFO[0m:     [30-04-2024 18:58:09] Started server process [[36m52264[0m]
+[32mINFO[0m:     [30-04-2024 18:58:09] Waiting for application startup.
+[32mINFO[0m:     [30-04-2024 18:58:09] Application startup complete.
+[32mINFO[0m:     [30-04-2024 18:58:09] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [30-04-2024 18:58:19] ::1:49798 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 18:58:19] ::1:49798 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 18:58:19] ::1:49800 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 18:59:29] ::1:49927 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 18:59:29] ::1:49927 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 18:59:29] ::1:49928 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:16:28] ::1:51521 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:16:28] ::1:51521 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:16:28] ::1:51522 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:16:39] ::1:51557 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:16:39] ::1:51557 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:16:39] ::1:51558 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:17:16] ::1:51622 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:17:16] ::1:51622 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:17:16] ::1:51623 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:41] ::1:52584 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:41] ::1:52584 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:41] ::1:52585 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:47] ::1:52597 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:47] ::1:52597 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:47] ::1:52598 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:51] ::1:52609 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:51] ::1:52609 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:27:51] ::1:52610 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:29:30] ::1:52801 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:29:30] ::1:52801 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:29:30] ::1:52802 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:34:43] ::1:53280 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:34:43] ::1:53280 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:34:43] ::1:53281 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:36:32] ::1:53435 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:36:32] ::1:53435 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:36:32] ::1:53436 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:44:45] ::1:54185 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:44:45] ::1:54185 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:44:45] ::1:54186 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:02] ::1:54219 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:02] ::1:54219 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:02] ::1:54220 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:26] ::1:54253 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:26] ::1:54253 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:26] ::1:54254 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:29] ::1:54264 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:29] ::1:54264 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 19:45:29] ::1:54265 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:16:44] ::1:57406 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:16:44] ::1:57406 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:16:44] ::1:57407 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:16:49] Shutting down
+[32mINFO[0m:     [30-04-2024 20:16:49] Waiting for application shutdown.
+[36mDEBUG[0m:    [30-04-2024 20:16:49] Stopping component System
+[36mDEBUG[0m:    [30-04-2024 20:16:49] Stopping component SegmentAPI
+[36mDEBUG[0m:    [30-04-2024 20:16:49] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [30-04-2024 20:16:49] Stopping component Posthog
+[36mDEBUG[0m:    [30-04-2024 20:16:49] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [30-04-2024 20:16:49] Stopping component SqliteDB
+[36mDEBUG[0m:    [30-04-2024 20:16:49] Stopping component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [30-04-2024 20:16:49] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [30-04-2024 20:16:49] Application shutdown complete.
+[32mINFO[0m:     [30-04-2024 20:16:49] Finished server process [[36m52264[0m]
+[33mWARNING[0m:  [30-04-2024 20:16:55] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [30-04-2024 20:16:55] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [30-04-2024 20:16:55] Starting component System
+[36mDEBUG[0m:    [30-04-2024 20:16:56] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [30-04-2024 20:16:56] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [30-04-2024 20:16:56] Starting component SqliteDB
+[36mDEBUG[0m:    [30-04-2024 20:16:56] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [30-04-2024 20:16:56] Starting component Posthog
+[36mDEBUG[0m:    [30-04-2024 20:16:56] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [30-04-2024 20:16:56] Starting component SegmentAPI
+[32mINFO[0m:     [30-04-2024 20:16:56] Started server process [[36m45716[0m]
+[32mINFO[0m:     [30-04-2024 20:16:56] Waiting for application startup.
+[32mINFO[0m:     [30-04-2024 20:16:56] Application startup complete.
+[32mINFO[0m:     [30-04-2024 20:16:56] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [30-04-2024 20:17:05] ::1:57446 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:17:05] ::1:57446 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:17:05] ::1:57447 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:28:45] ::1:58553 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:28:45] ::1:58553 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:28:45] ::1:58554 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:30:26] ::1:58701 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:30:26] ::1:58701 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:30:26] ::1:58702 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:37:59] ::1:59471 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:37:59] ::1:59471 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:37:59] ::1:59472 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:40:40] ::1:59741 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:40:40] ::1:59741 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:40:40] ::1:59742 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:40:41] ::1:59748 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:40:41] ::1:59748 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:40:41] ::1:59749 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:44:12] ::1:60062 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:44:12] ::1:60062 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:44:12] ::1:60063 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:46:18] ::1:60256 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:46:18] ::1:60256 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:46:18] ::1:60257 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:57:26] ::1:61502 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:57:26] ::1:61502 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:57:26] ::1:61503 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:58:51] ::1:61661 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:58:51] ::1:61661 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 20:58:51] ::1:61662 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:05:11] ::1:62253 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:05:12] ::1:62253 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:05:12] ::1:62254 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:15:24] ::1:63302 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:15:24] ::1:63302 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:15:24] ::1:63303 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:51:45] ::1:56583 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:51:45] ::1:56583 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:51:45] ::1:56584 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:52:17] ::1:56632 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:52:17] ::1:56632 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:52:17] ::1:56633 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:59:06] ::1:58498 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:59:06] ::1:58498 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [30-04-2024 21:59:06] ::1:58499 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [01-05-2024 17:11:23] ('127.0.0.1', 54159) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:11:23] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:11:23] connection closed
+[32mINFO[0m:     [01-05-2024 17:11:30] ('127.0.0.1', 54181) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:11:30] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:11:30] connection closed
+[32mINFO[0m:     [01-05-2024 17:11:35] ('127.0.0.1', 54194) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:11:35] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:11:35] connection closed
+[32mINFO[0m:     [01-05-2024 17:11:42] ('127.0.0.1', 54213) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:11:42] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:11:42] connection closed
+[32mINFO[0m:     [01-05-2024 17:11:55] ('127.0.0.1', 54231) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:11:55] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:11:55] connection closed
+[32mINFO[0m:     [01-05-2024 17:12:12] ('127.0.0.1', 54253) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:12:12] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:12:12] connection closed
+[32mINFO[0m:     [01-05-2024 17:12:32] ('127.0.0.1', 54285) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:12:32] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:12:32] connection closed
+[32mINFO[0m:     [01-05-2024 17:12:52] ('127.0.0.1', 54311) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:12:52] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:12:52] connection closed
+[32mINFO[0m:     [01-05-2024 17:13:14] ('127.0.0.1', 54344) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:13:14] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:13:14] connection closed
+[32mINFO[0m:     [01-05-2024 17:13:40] ('127.0.0.1', 54376) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:13:40] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:13:40] connection closed
+[32mINFO[0m:     [01-05-2024 17:13:57] ('127.0.0.1', 54399) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:13:57] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:13:57] connection closed
+[32mINFO[0m:     [01-05-2024 17:14:15] ('127.0.0.1', 54424) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:14:15] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:14:15] connection closed
+[32mINFO[0m:     [01-05-2024 17:14:34] ('127.0.0.1', 54455) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:14:34] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:14:34] connection closed
+[32mINFO[0m:     [01-05-2024 17:14:52] ('127.0.0.1', 54482) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:14:52] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:14:52] connection closed
+[32mINFO[0m:     [01-05-2024 17:15:11] ('127.0.0.1', 54512) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:15:11] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:15:11] connection closed
+[32mINFO[0m:     [01-05-2024 17:15:28] ('127.0.0.1', 54537) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:15:28] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:15:28] connection closed
+[32mINFO[0m:     [01-05-2024 17:15:46] ('127.0.0.1', 54563) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:15:46] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:15:46] connection closed
+[32mINFO[0m:     [01-05-2024 17:16:10] ('127.0.0.1', 54601) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:16:10] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:16:10] connection closed
+[32mINFO[0m:     [01-05-2024 17:16:29] ('127.0.0.1', 54626) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:16:29] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:16:29] connection closed
+[32mINFO[0m:     [01-05-2024 17:16:47] ('127.0.0.1', 54652) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:16:47] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:16:47] connection closed
+[32mINFO[0m:     [01-05-2024 17:17:02] ('127.0.0.1', 54675) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:17:02] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:17:02] connection closed
+[32mINFO[0m:     [01-05-2024 17:17:16] ('127.0.0.1', 54697) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:17:16] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:17:16] connection closed
+[32mINFO[0m:     [01-05-2024 17:17:32] ('127.0.0.1', 54717) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:17:32] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:17:32] connection closed
+[32mINFO[0m:     [01-05-2024 17:17:53] ('127.0.0.1', 54743) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:17:53] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:17:53] connection closed
+[32mINFO[0m:     [01-05-2024 17:18:11] ('127.0.0.1', 54765) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:18:11] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:18:11] connection closed
+[32mINFO[0m:     [01-05-2024 17:18:26] ('127.0.0.1', 54784) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:18:26] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:18:26] connection closed
+[32mINFO[0m:     [01-05-2024 17:18:44] ('127.0.0.1', 54809) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:18:44] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:18:44] connection closed
+[32mINFO[0m:     [01-05-2024 17:19:05] ('127.0.0.1', 54838) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:19:05] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:19:05] connection closed
+[32mINFO[0m:     [01-05-2024 17:19:20] ('127.0.0.1', 54856) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:19:20] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:19:20] connection closed
+[32mINFO[0m:     [01-05-2024 17:19:38] ('127.0.0.1', 54878) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:19:38] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:19:38] connection closed
+[32mINFO[0m:     [01-05-2024 17:19:55] ('127.0.0.1', 54900) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:19:55] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:19:55] connection closed
+[32mINFO[0m:     [01-05-2024 17:20:14] ('127.0.0.1', 54926) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:20:14] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:20:14] connection closed
+[32mINFO[0m:     [01-05-2024 17:20:36] ('127.0.0.1', 54971) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:20:36] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:20:36] connection closed
+[32mINFO[0m:     [01-05-2024 17:20:54] ('127.0.0.1', 55005) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:20:54] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:20:54] connection closed
+[32mINFO[0m:     [01-05-2024 17:21:09] ('127.0.0.1', 55034) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:21:09] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:21:09] connection closed
+[32mINFO[0m:     [01-05-2024 17:21:31] ('127.0.0.1', 55069) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:21:31] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:21:31] connection closed
+[32mINFO[0m:     [01-05-2024 17:21:45] ('127.0.0.1', 55086) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:21:45] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:21:45] connection closed
+[32mINFO[0m:     [01-05-2024 17:22:07] ('127.0.0.1', 55116) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:22:07] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:22:07] connection closed
+[32mINFO[0m:     [01-05-2024 17:22:24] ('127.0.0.1', 55141) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:22:24] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:22:24] connection closed
+[32mINFO[0m:     [01-05-2024 17:22:41] ('127.0.0.1', 55168) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:22:41] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:22:41] connection closed
+[32mINFO[0m:     [01-05-2024 17:23:04] ('127.0.0.1', 55199) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:23:04] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:23:04] connection closed
+[32mINFO[0m:     [01-05-2024 17:23:23] ('127.0.0.1', 55227) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:23:23] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:23:23] connection closed
+[32mINFO[0m:     [01-05-2024 17:23:38] ('127.0.0.1', 55247) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:23:38] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:23:38] connection closed
+[32mINFO[0m:     [01-05-2024 17:23:58] ('127.0.0.1', 55273) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:23:58] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:23:58] connection closed
+[32mINFO[0m:     [01-05-2024 17:24:18] ('127.0.0.1', 55299) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:24:18] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:24:18] connection closed
+[32mINFO[0m:     [01-05-2024 17:24:32] ('127.0.0.1', 55321) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:24:32] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:24:32] connection closed
+[32mINFO[0m:     [01-05-2024 17:24:49] ('127.0.0.1', 55344) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:24:49] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:24:49] connection closed
+[32mINFO[0m:     [01-05-2024 17:25:10] ('127.0.0.1', 55378) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:25:10] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:25:10] connection closed
+[32mINFO[0m:     [01-05-2024 17:25:26] ('127.0.0.1', 55404) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:25:26] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:25:26] connection closed
+[32mINFO[0m:     [01-05-2024 17:25:45] ('127.0.0.1', 55426) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:25:45] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:25:45] connection closed
+[32mINFO[0m:     [01-05-2024 17:26:03] ('127.0.0.1', 55463) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:26:03] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:26:03] connection closed
+[32mINFO[0m:     [01-05-2024 17:26:22] ('127.0.0.1', 55494) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:26:22] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:26:22] connection closed
+[32mINFO[0m:     [01-05-2024 17:26:39] ('127.0.0.1', 55515) - "WebSocket /" 403
+[32mINFO[0m:     [01-05-2024 17:26:39] connection rejected (403 Forbidden)
+[32mINFO[0m:     [01-05-2024 17:26:39] connection closed
+[33mWARNING[0m:  [06-05-2024 18:59:04] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [06-05-2024 18:59:05] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [06-05-2024 18:59:05] Starting component System
+[36mDEBUG[0m:    [06-05-2024 18:59:05] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [06-05-2024 18:59:05] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [06-05-2024 18:59:05] Starting component SqliteDB
+[36mDEBUG[0m:    [06-05-2024 18:59:05] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [06-05-2024 18:59:05] Starting component Posthog
+[36mDEBUG[0m:    [06-05-2024 18:59:05] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [06-05-2024 18:59:05] Starting component SegmentAPI
+[32mINFO[0m:     [06-05-2024 18:59:05] Started server process [[36m34796[0m]
+[32mINFO[0m:     [06-05-2024 18:59:05] Waiting for application startup.
+[32mINFO[0m:     [06-05-2024 18:59:05] Application startup complete.
+[32mINFO[0m:     [06-05-2024 18:59:05] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [06-05-2024 18:59:13] ::1:63995 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 18:59:13] ::1:63994 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 18:59:13] ::1:63994 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 18:59:13] ::1:63995 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 18:59:13] ::1:63998 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 18:59:13] ::1:63997 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 18:59:24] ::1:64017 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 18:59:24] ::1:64017 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 18:59:24] ::1:64018 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:18:34] ::1:65152 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:18:34] ::1:65152 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:18:34] ::1:65153 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:19:43] ::1:65228 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:19:43] ::1:65228 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:19:43] ::1:65229 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:22:25] ::1:65370 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:22:25] ::1:65370 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:22:25] ::1:65371 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:24:07] ::1:65506 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:24:07] ::1:65506 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:24:07] ::1:65507 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:24:13] ::1:65514 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:24:13] ::1:65514 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:24:13] ::1:65515 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:25:57] ::1:49250 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:25:57] ::1:49250 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:25:57] ::1:49251 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:28:55] ::1:49453 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:28:55] ::1:49453 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:28:55] ::1:49454 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:29:02] ::1:49469 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:29:02] ::1:49469 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:29:02] ::1:49470 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:33:05] ::1:49804 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:33:05] ::1:49804 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:33:05] ::1:49805 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:39:26] ::1:50384 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:39:26] ::1:50384 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:39:26] ::1:50385 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:41:04] ::1:50526 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:41:04] ::1:50526 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:41:04] ::1:50527 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:41:09] ::1:50536 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:41:09] ::1:50536 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:41:09] ::1:50537 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 19:42:30] Shutting down
+[32mINFO[0m:     [06-05-2024 19:42:30] Waiting for application shutdown.
+[36mDEBUG[0m:    [06-05-2024 19:42:30] Stopping component System
+[36mDEBUG[0m:    [06-05-2024 19:42:30] Stopping component SegmentAPI
+[36mDEBUG[0m:    [06-05-2024 19:42:30] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [06-05-2024 19:42:30] Stopping component Posthog
+[36mDEBUG[0m:    [06-05-2024 19:42:30] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [06-05-2024 19:42:30] Stopping component SqliteDB
+[36mDEBUG[0m:    [06-05-2024 19:42:30] Stopping component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [06-05-2024 19:42:30] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [06-05-2024 19:42:30] Application shutdown complete.
+[32mINFO[0m:     [06-05-2024 19:42:30] Finished server process [[36m34796[0m]
+[33mWARNING[0m:  [07-05-2024 13:15:47] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [07-05-2024 13:15:48] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [07-05-2024 13:15:48] Starting component System
+[36mDEBUG[0m:    [07-05-2024 13:15:48] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [07-05-2024 13:15:48] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [07-05-2024 13:15:48] Starting component SqliteDB
+[36mDEBUG[0m:    [07-05-2024 13:15:48] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [07-05-2024 13:15:48] Starting component Posthog
+[36mDEBUG[0m:    [07-05-2024 13:15:48] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [07-05-2024 13:15:48] Starting component SegmentAPI
+[32mINFO[0m:     [07-05-2024 13:15:48] Started server process [[36m38404[0m]
+[32mINFO[0m:     [07-05-2024 13:15:48] Waiting for application startup.
+[32mINFO[0m:     [07-05-2024 13:15:48] Application startup complete.
+[32mINFO[0m:     [07-05-2024 13:15:48] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [07-05-2024 13:16:02] ::1:61881 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:16:02] ::1:61882 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:16:02] ::1:61881 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:16:02] ::1:61882 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:16:02] ::1:61883 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:16:02] ::1:61884 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:16:10] ::1:61897 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:16:10] ::1:61897 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:16:10] ::1:61898 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:32:39] ::1:62630 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:32:39] ::1:62630 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:32:39] ::1:62631 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:33:54] ::1:62690 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:33:54] ::1:62690 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:33:54] ::1:62691 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:33:58] ::1:62698 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:33:58] ::1:62698 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:33:58] ::1:62699 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:41:05] ::1:63060 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:41:05] ::1:63060 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:41:05] ::1:63061 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:41:57] ::1:63116 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:41:57] ::1:63116 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:41:57] ::1:63117 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:42:04] ::1:63125 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:42:04] ::1:63125 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 13:42:04] ::1:63126 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:29:02] ::1:59043 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:29:02] ::1:59043 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:29:02] ::1:59044 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:29:02] ::1:59045 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:29:02] ::1:59044 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:29:02] ::1:59046 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:51:17] ::1:60049 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:51:17] ::1:60049 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:51:17] ::1:60050 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:51:30] ::1:60062 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:51:30] ::1:60062 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 18:51:30] ::1:60063 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200

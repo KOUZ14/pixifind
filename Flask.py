@@ -1,7 +1,14 @@
 from flask import Flask, render_template, request, jsonify
 import requests
+from API import store_image_to_s3
+import asyncio
+import urllib.parse
 
 app = Flask(__name__)
+
+async def upload_image_to_s3(image):
+    image_url = await store_image_to_s3(image)
+    return image_url
 
 # Route to serve the HTML file
 @app.route('/')
@@ -20,10 +27,21 @@ def search():
 @app.route('/recommend', methods=['POST'])
 def recommend():
     name = request.form.get('name')
+    link = request.form.get('link')
     description = request.form.get('description')
-    category = request.form.get('category')
+    images = ""
+
+    # Handle image uploads
+    for file in request.files.getlist('images'):
+        # Store image in S3 and get the image URL
+        image_url_coroutine = store_image_to_s3(file)
+        image_url = asyncio.run(image_url_coroutine)
+        #encoded_url = urllib.parse.quote(image_url, safe='')
+        images = str(image_url)
         # Make request to FastAPI backend
-    response = requests.post('http://localhost:9000/recommendations', json={"name": name, "description": description, "category": category})
+    print(name)
+    print(images)
+    response = requests.post('http://localhost:9000/recommendations', json={"name": f"{name}","link":f"{link}", "description": description,"images":f"{images}"})
     if response.status_code == 200:
         return 'Recommendation submitted successfully!'
     else:

@@ -37,12 +37,13 @@ def update_locations():
     # Generate embeddings and prepare data for insertion into ChromaDB
     for location in locations_data:
         name = location["name"]
+        link = location["link"]
         description = location["description"]
-        category = location["category"]
+        images = location["images"]
 
         # Append location data to respective lists
         documents.append(name)
-        metadatas.append({"description": description, "category": category})
+        metadatas.append({"link":link, "description": description, "images": images})
         ids.append(str(id))  # You can use name or any other unique identifier as the ID
         id+=1
 
