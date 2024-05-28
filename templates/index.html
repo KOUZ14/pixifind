@@ -561,23 +561,37 @@
             function searchLocations(query) {
                 fetch('/search', {
                     method: 'POST',
-                    body: new URLSearchParams({query})
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({ query }),
                 })
                 .then(response => response.json())
                 .then(data => {
                     // Display search results
                     let results = data.results;
                     let resultsDiv = document.getElementById("searchResults");
+                    resultsDiv.innerHTML = ''; // Clear previous results
                     results.forEach(result => {
                         // Construct HTML for each result and append it to the resultsDiv
-                        resultsDiv.innerHTML += `<div><strong>${result}</strong></div>`;
+                        resultsDiv.innerHTML += `
+                            <div>
+                                <strong>Name:</strong> ${result.name}<br>
+                                <strong>Link:</strong> <a href="${result.link}" target="_blank">${result.link}</a><br>
+                                <strong>Description:</strong> ${result.description}<br>
+                                <strong>Images:</strong> 
+                                <ul>
+                                    ${result.images.map(image => `<li><img src="${image}" alt="Image"></li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
                     });
-                    
                 })
                 .catch(error => {
                     console.error('Error:', error);
                 });
             }
+
     
             // Function to handle form submission for location recommendation
             document.getElementById("recommendForm").addEventListener("submit", function(event) {

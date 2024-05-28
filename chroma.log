@@ -2476,3 +2476,37 @@ chromadb.db.base.UniqueConstraintError: Collection locations already exists
 [32mINFO[0m:     [07-05-2024 18:51:30] ::1:60062 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
 [32mINFO[0m:     [07-05-2024 18:51:30] ::1:60062 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
 [32mINFO[0m:     [07-05-2024 18:51:30] ::1:60063 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 19:05:49] ::1:60752 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 19:05:49] ::1:60752 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 19:05:49] ::1:60753 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [07-05-2024 19:05:54] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [07-05-2024 19:05:54] ::1:60753 - "POST /api/v1/collections/3888debd-350e-4f2a-a6e6-f4ddaa18ea4a/query HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 19:10:07] ::1:60947 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 19:10:07] ::1:60947 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [07-05-2024 19:10:07] ::1:60948 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [27-05-2024 18:20:18] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [27-05-2024 18:20:19] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [27-05-2024 18:20:19] Starting component System
+[36mDEBUG[0m:    [27-05-2024 18:20:19] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [27-05-2024 18:20:19] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [27-05-2024 18:20:19] Starting component SqliteDB
+[36mDEBUG[0m:    [27-05-2024 18:20:19] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [27-05-2024 18:20:19] Starting component Posthog
+[36mDEBUG[0m:    [27-05-2024 18:20:19] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [27-05-2024 18:20:19] Starting component SegmentAPI
+[32mINFO[0m:     [27-05-2024 18:20:19] Started server process [[36m64556[0m]
+[32mINFO[0m:     [27-05-2024 18:20:19] Waiting for application startup.
+[32mINFO[0m:     [27-05-2024 18:20:19] Application startup complete.
+[32mINFO[0m:     [27-05-2024 18:20:19] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [27-05-2024 18:20:39] ::1:50330 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:20:39] ::1:50331 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:20:39] ::1:50330 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:20:39] ::1:50331 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:20:39] ::1:50332 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:20:39] ::1:50333 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:20:51] ::1:50352 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:20:51] ::1:50352 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:20:51] ::1:50353 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:21:39] ::1:50419 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:21:39] ::1:50419 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-05-2024 18:21:39] ::1:50420 - "GET /api/v1/collections/locations?tenant=default_tenant&database=default_database HTTP/1.1" 200

@@ -13,7 +13,7 @@ async def upload_image_to_s3(image):
 # Route to serve the HTML file
 @app.route('/')
 def index():
-    return render_template('Recommend.html')
+    return render_template('index.html')
 
 # Route to handle AJAX requests to the FastAPI backend
 @app.route('/search', methods=['POST'])

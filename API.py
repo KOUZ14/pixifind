@@ -86,7 +86,7 @@ async def add_recommendation(recommendation: LocationRecommendation):
         with open("locations.json", "w") as f:
             json.dump(locations, f, indent=4)
 
-        locations_data = load_locations()
+        update_locations()
         
         return recommendation
     except Exception as e:
